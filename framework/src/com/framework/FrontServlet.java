@@ -1,4 +1,4 @@
-package com.example.framework;
+package com.framework;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -14,10 +14,9 @@ public class FrontServlet extends HttpServlet {
         // Extract the full request URL (e.g., http://localhost:80/home)
         String url = req.getRequestURL().toString();
 
-        // Write it to the response (this will display on the page)
-        PrintWriter out = resp.getWriter();
-        out.println("Requested URL: " + url);
-        out.close();
+        req.setAttribute("requestedUrl",url);
+
+        req.getRequestDispatcher("/index.jsp").forward(req,resp);
     }
 
     @Override

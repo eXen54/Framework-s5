@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>frontServlet</servlet-name>
-        <servlet-class>com.example.framework.FrontServlet</servlet-class>
+        <servlet-class>com.framework.FrontServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
