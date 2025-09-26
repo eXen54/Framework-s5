@@ -1,31 +1,21 @@
 package com.framework;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
 public class FrontServlet extends HttpServlet {
 
     @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // Extract the full request URL (e.g., http://localhost:80/home)
+    protected void service(
+            HttpServletRequest req,
+            HttpServletResponse res) throws ServletException, IOException {
         String url = req.getRequestURL().toString();
-
-        req.setAttribute("requestedUrl",url);
-
-        req.getRequestDispatcher("/index.jsp").forward(req,resp);
+        PrintWriter out = res.getWriter();
+        out.println(url);
     }
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        service(req, resp);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        service(req, resp);
-    }
 }

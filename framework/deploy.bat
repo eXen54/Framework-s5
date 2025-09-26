@@ -3,11 +3,14 @@ setlocal EnableDelayedExpansion
 
 echo Compiling framework...
 set "LIB_DIR=lib"
-set "SERVLET_JAR=%LIB_DIR%\servlet-api.jar"
-if not exist "!SERVLET_JAR!" (
-    echo Error: servlet-api.jar not found in %LIB_DIR%. Please copy it from your Tomcat installation (e.g., C:\tomcat\lib\servlet-api.jar).
-    exit /b 1
-)
+set "SERVLET_JAR=D:\MES DOCUMENTS\S5\MRnaina\FrameworkS5\framework\lib\servlet-api.jar"
+
+echo eto oh
+@REM if not exist "!SERVLET_JAR!" (
+@REM     echo Error: servlet-api.jar not found in %LIB_DIR%. Please copy it from your Tomcat installation (e.g., C:\tomcat\lib\servlet-api.jar).
+@REM     exit /b 1
+@REM )
+@REM echo eto oh
 set "CLASSPATH=!SERVLET_JAR!"
 echo Using CLASSPATH: !CLASSPATH!
 
