@@ -1,5 +1,5 @@
 .
-├── framework_new
+├── framework
 │   ├── pom.xml
 │   ├── src
 │   │   └── main
@@ -42,7 +42,7 @@
 │                       ├── createdFiles.lst
 │                       └── inputFiles.lst
 ├── sprint-4.txt
-├── test_project_new
+├── test
 │   ├── deploy.bat
 │   ├── deploy.sh
 │   ├── pom.xml

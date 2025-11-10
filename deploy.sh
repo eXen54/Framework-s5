@@ -1,5 +1,5 @@
-cd framework_new
+cd framework
 mvn clean install
-cd ../test_project_new
+cd ../test
 mvn clean install
 ./deploy.sh
