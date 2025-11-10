@@ -8,3 +8,5 @@ sprint4-4-bis:
     -dans une méthode du controller, on peut créer un ModelView
         -on set l'attribut view au nom de la page
         -on fait en sorte d'afficher le contenu de cette page avec Dispatcher.
+
+        zay
