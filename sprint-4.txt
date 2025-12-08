@@ -9,4 +9,4 @@ sprint4-4-bis:
         -on set l'attribut view au nom de la page
         -on fait en sorte d'afficher le contenu de cette page avec Dispatcher.
 
-        zay
+        zay""

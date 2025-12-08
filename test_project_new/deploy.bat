@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 @REM chemin de apache tomcat sous linux :  /home/faniry/Documents/apache-tomcat-10.1.48
 
 :: Déclaration des variables
-set "work_dir=C:\Users\Faniry\Documents\GitHub\framework_project\test"
+set "work_dir=C:\Users\Faniry\Documents\GitHub\framework_project\test_project_new"
 set "web_apps=C:\apache-tomcat-10.1.34\apache-tomcat-10.1.34\webapps"
 set "war_name=test_project"
 
