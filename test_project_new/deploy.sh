@@ -4,13 +4,13 @@
 
 # --- Variables à configurer ---
 # Chemin vers le dossier webapps de votre serveur Tomcat
-TOMCAT_WEBAPPS="D:\MES DOCUMENTS\S5\apache-tomcat-10.1.28\webapps"
+TOMCAT_WEBAPPS="/home/faniry/Documents/apache-tomcat-10.1.48/webapps"
 
 # Nom du fichier .war (sans l'extension)
 WAR_NAME="test_project"
 
 # Chemin vers le dossier du projet (là où se trouve le dossier target)
-PROJECT_DIR="D:\MES DOCUMENTS\S5\MRnaina\FrameworkS5\test_project_new"
+PROJECT_DIR="/home/faniry/Documents/GitHub/framework_project/test_project_new"
 # --- Fin de la configuration ---
 
 
